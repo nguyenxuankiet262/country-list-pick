@@ -17,6 +17,7 @@ class CountryTheme {
   final Color? backgroundSelection;
   final Color? background;
   final Color? textColor;
+  final Color? hintColor;
 
   CountryTheme({
     this.labelColor,
@@ -35,5 +36,6 @@ class CountryTheme {
     this.background,
     this.backgroundSelection,
     this.textColor,
+    this.hintColor,
   });
 }

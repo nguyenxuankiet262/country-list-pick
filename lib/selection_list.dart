@@ -97,8 +97,10 @@ class _SelectionListState extends State<SelectionList> {
                         Container(
                           color: Colors.white,
                           child: TextField(
+                            style: TextStyle(color: widget.theme?.textColor ?? Colors.black),
                             controller: _controller,
                             decoration: InputDecoration(
+                              hintStyle: TextStyle(color: widget.theme?.hintColor ?? Colors.black),
                               border: InputBorder.none,
                               focusedBorder: InputBorder.none,
                               enabledBorder: InputBorder.none,
@@ -118,7 +120,7 @@ class _SelectionListState extends State<SelectionList> {
                           ),
                         ),
                         Container(
-                          color: Colors.white,
+                          color: widget.theme?.background ?? Colors.white,
                           child: Material(
                             color: Colors.transparent,
                             child: ListTile(
@@ -130,7 +132,7 @@ class _SelectionListState extends State<SelectionList> {
                               title: Text(widget.initialSelection!.name!, style: TextStyle(color: widget.theme?.textColor ?? Colors.black)),
                               trailing: Padding(
                                 padding: const EdgeInsets.only(right: 20.0),
-                                child: Icon(Icons.check, color: Colors.green),
+                                child: Icon(Icons.check, color: widget.theme?.labelColor ?? Colors.green),
                               ),
                             ),
                           ),
