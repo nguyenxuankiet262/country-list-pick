@@ -380,7 +380,7 @@ List<Map<String, String>> codes = [
     "dial_code": "+689",
   },
   {
-    "name": "Territoire des Terres australes et antarctiques fr",
+    "name": "French Southern Territories",
     "code": "TF",
     "dial_code": "+262",
   },
